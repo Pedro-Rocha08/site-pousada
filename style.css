@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d8cdb5;
+  color: #222;
+}
+
+header {
+  background: #7d6517;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.logo {
+  width: 185px;
+  display: block;
+  position: relative;
+  top: 5px;
+  margin-left: 100px;
+}
+
+.contato {
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+
+.topo {
+  width: 100px;
+  position: absolute;
+  top: 5px;
+  display: block;
+  margin-left: 10px auto ;
+}
+
+button {
+  transition: all 0.3s cubic-bezier(0.58, 0.00, 0.42, 1.00);
+  background: #7d6517;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background: #9c864c;
+}
+
+.quartos, .info {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.quartos h2, .info h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #bba97f;
+  width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px #7d6517;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3, .card p {
+  padding: 0 18px;
+}
+
+.card button {
+  margin: 18px;
+  width: calc(100% - 36px);
+}
+
+.info {
+  background: #bba97f;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

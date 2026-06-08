@@ -1,0 +1,212 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#d8cdb5;
+}
+
+header{
+    background:#7d6517;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.galeria {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.informacoes {
+    width: 45%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.suite{
+    color:#000000;
+}
+
+.carrossel{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow: 0 0 10px #52420e;
+}
+
+.slider{
+    display:flex;
+    transition:transform 0.5s ease;
+}
+
+.slider img{
+    width:100%;
+    flex-shrink:0;
+
+    height:450px;
+    object-fit:cover;
+}
+
+.carrossel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+#fotoQuarto{
+    transition:opacity 0.4s ease;
+}
+
+.seta {
+    position: absolute;
+    top: 40%;
+    transform: size(2);
+    z-index: 10;
+
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.esquerda {
+    left: 15px;
+}
+
+.direita {
+    right: 15px;
+}
+
+.seta span{
+    position:relative;
+    top:-7px;
+}
+
+.seta:focus-visible {
+    outline: none;
+}
+ 
+.seta:hover{
+    background:#b89f4d;
+}
+
+.indicadores{
+    text-align:center;
+    margin-top:15px;
+}
+
+.bolinha{
+    width:12px;
+    height:12px;
+
+    display:inline-block;
+
+    margin:0 5px;
+
+    border-radius:50%;
+
+    background:#79735c;
+
+    transition:all 0.3s ease;
+}
+
+.bolinha.ativa{
+    background:#b89f4d;
+    transform:scale(1.4);
+}
+
+.informacoes{
+    flex:1;
+    background:#bba97f;
+    padding:25px;
+    border-radius:15px;
+    box-shadow: 0 0 10px rgb(125, 101, 23);
+}
+
+h2{
+    color:#7a6020;
+}
+
+.comodidades ul{
+    list-style:none;
+    padding:0;
+}
+
+.comodidades li{
+    padding:8px;
+}
+
+.reserva{
+    margin-top:25px;
+}
+
+.reserva label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.reserva input,
+.reserva select{
+    width:95%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #948461;
+    border-radius:8px;
+    background:#d8cdb5;
+}
+
+button{
+    transition: all 0.3s cubic-bezier(0.58, 0.00, 0.42, 1.00);
+    width:100%;
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    transform: scale(1.03);
+    opacity:0.9;
+}
+
+.btn-preco{
+    background:#7d6517;
+    color:white;
+}
+
+.btn-preco:hover{
+    background:#9c864c;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+#preco{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+    color:#b89f4d;
+    text-align:center;
+}

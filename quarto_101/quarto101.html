@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Quarto 101 - Hotel Da Serra</title>
+    <link rel="stylesheet" href="qrt101.css">
+</head>
+<body>
+
+<header>
+    <h1>Quarto 101</h1>
+    <p>Conforto e tranquilidade para sua hospedagem</p>
+</header>
+
+<div class="container">
+
+    <div class="galeria">
+        <div class="carrossel">
+
+        <button class="seta esquerda"
+            onclick="imagemAnterior()">
+                <span>❮</span>
+        </button>
+
+        <div class="slider" id="slider">
+
+            <img src="quarto101.png">
+            <img src="images copy.jpeg">
+            <img src="images.jpeg">
+
+        </div>
+
+        <button class="seta direita"
+            onclick="proximaImagem()">
+            <span>❯</span>
+        </button>
+
+        </div>
+
+        <div class="indicadores">
+            <span class="bolinha ativa"></span>
+            <span class="bolinha"></span>
+            <span class="bolinha"></span>
+        </div>
+    </div>
+
+    <div class="informacoes">
+
+        <h2 class="suite">Suíte Casal Premium</h2>
+
+        <p>
+            Quarto espaçoso com cama de casal, ar-condicionado,
+            televisão e Wi-Fi incluso.
+        </p>
+
+        <div class="comodidades">
+            <h3>Comodidades</h3>
+
+            <ul>
+                <li>🛏️ Cama Queen</li>
+                <li>📶 Wi-Fi Grátis</li>
+                <li>❄️ Ar-condicionado</li>
+                <li>📺 Smart TV</li>
+                <li>🚿 Banheiro Privativo</li>
+            </ul>
+        </div>
+
+        <div class="reserva">
+
+            <label>Check-in</label>
+            <input type="date" id="checkin">
+
+            <label>Check-out</label>
+            <input type="date" id="checkout">
+
+            <label>Quantidade de hóspedes</label>
+
+            <select id="hospedes">
+                <option>1 hóspede</option>
+                <option selected>2 hóspedes</option>
+                <option>3 hóspedes</option>
+                <option>4 hóspedes</option>
+            </select>
+
+            <button onclick="consultarPreco()" class="btn-preco">
+                Consultar Preços
+            </button>
+
+            <div id="preco"></div>
+
+            <button class="whatsapp" onclick="reservar()">
+                Reservar pelo WhatsApp
+            </button>
+
+        </div>
+    </div>
+
+</div>
+   
+</section>
+
+<script src="qrt101.js"></script>
+
+</body>
+</html>
