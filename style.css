@@ -7,6 +7,9 @@ body {
   font-family: Arial, sans-serif;
   background: #d8cdb5;
   color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -107,5 +110,5 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  top: relative;
+  flex: 1;
 }
